@@ -40,37 +40,6 @@ gulp.task('browser-sync', function() {
   });
 });
 
-/*
-// Минимизированный файл c суффиксом min и автопрефиксами------ не используется
-gulp.task('csso', function () {
-  return gulp.src('./src/assets/css/style.css')
-      .pipe(gcmq())
-      .pipe(csso())
-      // .pipe(gulp.dest('./src/assets/css/dist'));
-      .pipe(rename({
-        suffix: ".min"    
-      }))
-      .pipe(autoprefixer({
-        cascade: false
-    }))
-    .pipe(gulp.dest("./src/assets/css/dist"));
-});
-
-// Добавление суффикса min.---------------- не используется 
-gulp.task('rename', function () {
-  return gulp.src("./src/assets/css/dist/style.css", { base: process.cwd() })
-  .pipe(rename({
-    suffix: ".min"    
-  }))
-  .pipe(gulp.dest("./"));
-});
-
-gulp.task('gcmq', function () {
-  return gulp.src('./src/assets/css/style.css')
-      .pipe(gcmq())
-      .pipe(gulp.dest('./src/assets/css/q'));
-});*/
-
 gulp.task('checkupdate', function () {
   gulp.watch('./src/assets/scss/**/*.scss', gulp.parallel('sass'));
   gulp.watch('./src/*.html').on('change', browserSync.reload);
@@ -83,6 +52,3 @@ gulp.task(
     'checkupdate'
   )
 );
-// gulp.task('sass:watch', function () {
-//   gulp.watch('./sass/**/*.scss', ['sass']);
-// });
