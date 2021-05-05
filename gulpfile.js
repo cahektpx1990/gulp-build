@@ -24,7 +24,7 @@ gulp.task('sass', function () {
     .pipe(rename({
       suffix: ".min"    
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest("./src/assets/css"))
     .pipe(browserSync.reload({ stream: true}));    
 });
