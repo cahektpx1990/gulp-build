@@ -3,6 +3,8 @@
 Сборка gulp для вестки простых сайтов (лендингов) с использование препроцессора *css => scss*.
 
 ## Что включает в себя сборка? 
+
+* [browserSync](https://browsersync.io/docs/gulp) - запуск и быстрая перезагрузка сервера в реальном времени;
  * [gulp-autoprefixer](https://github.com/Berzeg07/build_gulp4) - автоматически расставляет вендорные префиксы в CSS в соответствии с сервисом [Can I Use](https://caniuse.com/);
  * [gulp-sass](https://www.npmjs.com/package/gulp-sass) - компиляция SASS,SCSS в CSS;
  * [gulp-rename](https://www.npmjs.com/package/gulp-rename) - переименование файлов;
@@ -10,6 +12,7 @@
  * [gulp-csso](https://www.npmjs.com/package/gulp-csso) - CSS минификатор;
  * [gulp-watch]() - отслеживание изменений в файлах проекта;
  * [gulp-group-css-media-queries](https://www.npmjs.com/package/gulp-group-css-media-queries) - группирует @media screen;
+ * [gulp-include](https://www.npmjs.com/package/gulp-include) - Делает включение файлов простым. Обеспечивает функциональность, аналогичную функциям snockets / sprockets или других инструментов компиляции вставки файлов. (Устанавливался плагин для js);
  # Как пользоваться?
  Установить Node JS
  Далее, используя cmd в Windows или Терминал VSCode, проделайте следующие шаги:
